@@ -35,7 +35,7 @@ pico_sdk_init()
 
 # Add executable. Default name is the project name, version 0.1
 
-add_executable(tarefa_ADC tarefa_ADC.c )
+add_executable(tarefa_ADC tarefa_ADC.c lib/ssd1306.c)
 
 pico_set_program_name(tarefa_ADC "tarefa_ADC")
 pico_set_program_version(tarefa_ADC "0.1")
@@ -46,7 +46,7 @@ pico_enable_stdio_usb(tarefa_ADC 0)
 
 # Add the standard library to the build
 target_link_libraries(tarefa_ADC
-        pico_stdlib)
+        )
 
 # Add the standard include files to the build
 target_include_directories(tarefa_ADC PRIVATE
@@ -55,7 +55,7 @@ target_include_directories(tarefa_ADC PRIVATE
 
 # Add any user requested libraries
 target_link_libraries(tarefa_ADC 
-        
+        hardware_i2c hardware_adc pico_stdlib 
         )
 
 pico_add_extra_outputs(tarefa_ADC)
