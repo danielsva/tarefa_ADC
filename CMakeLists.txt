@@ -55,7 +55,7 @@ target_include_directories(tarefa_ADC PRIVATE
 
 # Add any user requested libraries
 target_link_libraries(tarefa_ADC 
-        hardware_i2c hardware_adc pico_stdlib 
+        hardware_i2c hardware_adc pico_stdlib hardware_pwm
         )
 
 pico_add_extra_outputs(tarefa_ADC)
