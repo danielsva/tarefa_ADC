@@ -2,7 +2,7 @@
 
 ## 📷 Demonstração
 
-- **Execução na Placa BitDogLab:** [Assista no YouTube](https://youtu.be/QZhPXDIq2H0](https://youtu.be/pACJTYoGSQQ)
+- **Execução na Placa BitDogLab:** [Assista no YouTube](https://youtu.be/pACJTYoGSQQ)
 
 ## 📌 Sobre o Projeto
 Este projeto utiliza um **joystick analógico** para controlar LEDs com **PWM** e um **display OLED SSD1306**. O sistema ajusta o brilho dos LEDs conforme os eixos X e Y do joystick, além de exibir um quadrado no display que se move proporcionalmente.
